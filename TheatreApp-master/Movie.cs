@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 namespace TheatreApp
 {
     public class Movie
@@ -11,10 +12,10 @@ namespace TheatreApp
 
         public Movie(string name, int year, int length)
         {
-            Name = name;
+            Title = name;
             Year = year;
             Length = length;
-            Cast = new List<string>();
+            Cast = new List<string>() { };
         }
         public void AddActor(string actor)
         {
